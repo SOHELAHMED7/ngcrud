@@ -1,7 +1,9 @@
 # ngcrud
 angular - crud - learn - play - my practice
 
-
+see https://angular.io/guide/quickstart
+and
+https://angular.io/tutorial
 
 
 
