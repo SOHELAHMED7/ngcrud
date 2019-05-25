@@ -59,4 +59,14 @@ export class FruitService {
             catchError(this.handleError<Fruit>('edit'))
         );
     }
+
+    public sk(term: string): Observable<Fruit[]> {
+        if (!term.trim()) {
+            return of([]);
+        }
+        return this.http.get<Fruit[]>(`${this.uri}/?name=${term}`).pipe(
+            tap(_ => console.log('got response')),
+            catchError(this.handleError<Fruit[]>('search', []))
+        );
+    }
 }

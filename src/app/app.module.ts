@@ -12,6 +12,7 @@ import { AddFruitComponent } from './component/fruit/add/AddFruitComponent';
 import { FormsModule } from '@angular/forms';
 import { EditFruitComponent } from './component/fruit/edit/EditFruitComponent';
 import { ViewFruitComponent } from './component/fruit/view/ViewFruitComponent';
+import { SearchComponent } from './component/fruit/search/SearchComponent';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ViewFruitComponent } from './component/fruit/view/ViewFruitComponent';
     MaincrudpageComponent,
     AddFruitComponent,
     EditFruitComponent,
-    ViewFruitComponent
+    ViewFruitComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

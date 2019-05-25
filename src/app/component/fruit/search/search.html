@@ -1,0 +1,9 @@
+<div>
+    <input #searchterm (input)="searchFunc(searchterm.value)" placeholder="search"/>
+    <ul>
+        <li *ngFor="let frt of allFruit$ | async">
+            {{ frt.name }}
+            {{ frt.color }}
+        </li>
+    </ul>
+</div>
