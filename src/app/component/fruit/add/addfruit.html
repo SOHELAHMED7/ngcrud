@@ -1,0 +1,7 @@
+<div *ngIf="fruit">
+    <form method="POST" (submit)="formSubmitted(fruit)">
+        <input [(ngModel)]="fruit.name" [ngModelOptions]="{standalone: true}" />
+        <input [(ngModel)]="fruit.color" [ngModelOptions]="{standalone: true}" />
+        <input type="submit" value="add" />
+    </form>
+</div>

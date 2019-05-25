@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let a_fruit of allFruit">
+        {{ a_fruit.id }} &emsp;----
+        {{ a_fruit.name }} &emsp;----
+        {{ a_fruit.color }} &emsp;----
+        <a routerLink="/fruits/edit/{{a_fruit.id}}">edit</a> ----
+        <!-- <a routerLink="/fruits/delete/{{a_fruit.id}}">delete</a> &emsp; -->
+        <a (click)="deleteFrt(a_fruit)">clivk me to delete</a> &emsp; ----
+        <a routerLink="/fruits/view/{{a_fruit.id}}">view</a> ----
+    </li>
+</ul>

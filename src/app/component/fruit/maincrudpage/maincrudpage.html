@@ -1,0 +1,8 @@
+<a routerLink="/fruits/add">Add Fruits</a>
+
+<!-- flash msg -->
+<!-- <div *ngIf="addSuccMsgHere"> -->
+    <!-- {{ addSuccMsgHere }} -->
+<!-- </div> -->
+
+<app-fruitlist (messageEvent)="recMsg($event)"></app-fruitlist>
