@@ -5,7 +5,7 @@ see https://angular.io/guide/quickstart
 and
 https://angular.io/tutorial
 
-
+No actual call to web services are made, instead angular in memory web api is used
 
 
 
