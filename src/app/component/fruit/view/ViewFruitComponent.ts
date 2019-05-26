@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
     templateUrl: './viewfruit.html'
 })
 export class ViewFruitComponent implements OnInit {
-    public fruit: Fruit = {id: 2, name: 'd', color: 'ss'};
+    public fruit: Fruit;
     public operation = 'view';
 
     constructor(
