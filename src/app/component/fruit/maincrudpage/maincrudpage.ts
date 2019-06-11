@@ -13,7 +13,8 @@ export class MaincrudpageComponent {
     //     this.addSuccMsgHere = this.addFruitC.addSuccMsg;
     // }
 
-    // recMsg($event: any) {
-    //     this.addSuccMsgHere = $event;
-    // }
+    recMsg(event: any) {
+        console.log('wkr252633');
+        this.addSuccMsgHere = event;
+    }
 }

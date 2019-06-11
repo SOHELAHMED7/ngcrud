@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
 export class AddFruitComponent implements OnInit {
     public fruit: Fruit;
     public operation = 'add';
-    // public addSuccMsg: string;
+    public addSuccMsg: string;
 
     // @Output() msgEvent: EventEmitter<string> = new EventEmitter<string>();
 
@@ -28,7 +28,7 @@ export class AddFruitComponent implements OnInit {
         // console.log('545544554545454');
         this.fruitservice.add(fruit).subscribe((fruitinc) => {
             console.log(`${fruitinc} added`);
-            // this.addSuccMsg = `hooray, added ${fruitinc.name} with success`;
+            this.addSuccMsg = `hooray, added ${fruitinc.name} with success`;
             // this.msgEvent.emit(this.addSuccMsg);
             this.location.back();
         });
